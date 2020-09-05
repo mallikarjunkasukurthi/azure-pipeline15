@@ -18,7 +18,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'dockerhub.com'
+        containerRegistry: 'https://hub.docker.com/u/kmallikarjunarao'
         repository: 'current-exechange-service1'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
